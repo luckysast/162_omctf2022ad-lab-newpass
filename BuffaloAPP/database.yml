@@ -1,0 +1,11 @@
+development:
+  dialect: "sqlite"
+  database: /src/project/databases/project_project_development.sqlite
+
+test:
+  dialect: "sqlite"
+  database: /src/project/databases/project_project_test.sqlite
+
+production:
+  dialect: "sqlite"
+  database: /src/project/databases/project_project_production.sqlite

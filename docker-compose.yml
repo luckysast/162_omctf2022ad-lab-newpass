@@ -1,0 +1,19 @@
+version: '3.7'
+
+services:
+  someservice:
+    build: ./BuffaloAPP
+    restart: always
+    volumes:
+       - ./BuffaloAPP/:/src/project/
+    ports:
+      - 3000:3000
+    networks:
+      - someservice-net
+    # deploy:
+    #   resources:
+    #     limits:
+    #       cpus: "0.50"
+    #       memory: 400M
+networks:
+  someservice-net:

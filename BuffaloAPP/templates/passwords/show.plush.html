@@ -1,0 +1,36 @@
+<div class="py-4 mb-2">
+  <h3 class="d-inline-block">Password Details</h3>
+
+  <div class="float-end">
+    <%= linkTo(passwordsPath(), {class: "btn btn-info"}) { %>
+      Back to all Passwords
+    <% } %>
+  </div>
+</div>
+
+
+
+<ul class="list-group mb-2 ">
+
+
+  <li class="list-group-item pb-1">
+    <label class="small d-block">UserID</label>
+    <p class="d-inline-block"><%= password.UserID %></p>
+  </li>
+
+
+
+  <li class="list-group-item pb-1">
+    <label class="small d-block">Name</label>
+    <p class="d-inline-block"><%= password.Name %></p>
+  </li>
+
+
+
+  <li class="list-group-item pb-1">
+    <label class="small d-block">Value</label>
+    <p class="d-inline-block"><%= password.Value %></p>
+  </li>
+
+
+</ul>
